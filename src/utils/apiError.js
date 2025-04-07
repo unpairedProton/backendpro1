@@ -2,7 +2,7 @@ class apiError extends Error {
     constructor(statusCode,
         message= 'Something went wrong',
         errors=[],
-        statck ='') 
+        stack ='') 
         {
             super(message)
             this.statusCode = statusCode
@@ -13,7 +13,7 @@ class apiError extends Error {
         
 
             if(stack){
-                this.stack = statck
+                this.stack = stack
             }
             else{
                 Error.captureStackTrace(this, this.constructor)
