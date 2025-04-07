@@ -1,7 +1,9 @@
-import asyncHandlerA from "../utils/asyncHandlerA copy";
+import asyncHandlerP from "../utils/asyncHandlerP.js";
 
-const registerUser = asyncHandlerA(async (req,res)=>{
+const registerUser = asyncHandlerP(async (req,res)=>{
     res.status(200).json({
-        message:"ok"
+        message:"chai or code"
     })
 })
+
+export default registerUser
